@@ -1,0 +1,309 @@
+
+package ps222vt;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.Stack;
+
+/**
+ * There are many help-methods used throughout this project, to avoid
+ * overcrowding, I have created this class HelpClass<E> which contains all the
+ * help methods used. All the methods are briefly explained.
+ * 
+ * @author Prasannjeet Singh
+ *
+ * @param <E>
+ */
+public class HelpClass<E> {
+	/**
+	 * I used the iterator many times in many methods just to get the nodes in a
+	 * list, so, to avoid duplication of code, created a method which runs the
+	 * iterator on a directed graph, and saves all the nodes in a list and later
+	 * returns it.
+	 * 
+	 * @param A directed graph.
+	 * @return A List<Node<E>> that contains all the nodes in the graph.
+	 */
+	protected List<Node<E>> nodesAsList(DirectedGraph<E> dg) {
+		List<Node<E>> returnList = new ArrayList<Node<E>>();
+		Iterator<Node<E>> newIterator = dg.iterator();
+		while (newIterator.hasNext()) {
+			returnList.add(newIterator.next());
+		}
+		return returnList;
+	}
+
+	/**
+	 * Just like the method nodesAsList(), only difference is it returns head nodes.
+	 * 
+	 * @param Directed Graph
+	 * @return A List<Node<E>> that contains all head nodes of the directed graph.
+	 */
+	protected List<Node<E>> headsAsList(DirectedGraph<E> dg) {
+		List<Node<E>> returnList = new ArrayList<Node<E>>();
+		Iterator<Node<E>> newIterator = dg.heads();
+		while (newIterator.hasNext()) {
+			returnList.add(newIterator.next());
+		}
+		return returnList;
+	}
+
+	/**
+	 * Just like the method nodesAsList(), only difference is it takes a node as a
+	 * parameter, and returns a list with all it's predecessors.
+	 * 
+	 * @param Node object
+	 * @return A List<Node<E>> that contains all the predecessor nodes of the given node.
+	 */
+	protected List<Node<E>> predAsList(Node<E> node) {
+		Iterator<Node<E>> predItr = node.predsOf();
+		List<Node<E>> returnList = new ArrayList<Node<E>>();
+		while (predItr.hasNext()) {
+			returnList.add(predItr.next());
+		}
+		return returnList;
+	}
+
+	/**
+	 * Just like the method nodesAsList(), only difference is it takes a node as a
+	 * parameter, and returns a list with all it's successors.
+	 * 
+	 * @param Node object
+	 * @return A List<Node<E>> that contains all the successors nodes of the given
+	 *         node.
+	 */
+	protected List<Node<E>> succAsList(Node<E> node) {
+		Iterator<Node<E>> succItr = node.succsOf();
+		List<Node<E>> returnList = new ArrayList<Node<E>>();
+		while (succItr.hasNext()) {
+			returnList.add(succItr.next());
+		}
+		return returnList;
+	}
+
+	/**
+	 * 
+	 * The private method below silently ignores those items which are
+	 * not present in the node. And if present, it removes them from the directed
+	 * graph.
+	 * 
+	 * @param A Directed Graph
+	 * @param A Generic Item <E> which is supposed to be removed from the graph.
+	 */
+	protected void removeNodeForModified(DirectedGraph<E> dg, E item) {
+		if (!dg.containsNodeFor(item))
+			return;
+		dg.removeNodeFor(item);
+	}
+
+	/**
+	 * This method deep-clones a directed graph. Meaning it creates an entirely new
+	 * directed graph, and iterates through original items and their edges, and adds
+	 * those items as well as the edges to a new directed graph. The newly created
+	 * graph is completely independent of the original graph, i.e. any changes done
+	 * to any node, edges, etc will have no affect on the original directed graph.
+	 * 
+	 * 
+	 * @param A Directed Graph
+	 * @return A Cloned directed graph.
+	 */
+	protected DirectedGraph<E> copyDG(DirectedGraph<E> dg) {
+		DirectedGraph<E> returnItem = new MyGraph<E>();
+		Iterator<Node<E>> mainNodeIterator = dg.iterator();
+		while (mainNodeIterator.hasNext()) {
+			Node<E> tempNode = mainNodeIterator.next();
+			Iterator<Node<E>> successors = tempNode.succsOf();
+			if (!successors.hasNext())
+				returnItem.addNodeFor(tempNode.item());
+			while (successors.hasNext()) {
+				returnItem.addEdgeFor(tempNode.item(), successors.next().item());
+			}
+		}
+		return returnItem;
+	}
+
+	/**
+	 * Sometimes after working on the copied graph, whether doing a dfs, bfs or
+	 * something else, when we have our final List<Node<E>>, the only thing common
+	 * between this node and the original nodes are the item(). Rest everything,
+	 * such as successors and predecessors are changed. Consider the topSort, where
+	 * we keep removing nodes till a point there are no more nodes. It affects the
+	 * successors and predecessors of nodes from the copied directed graph. So to
+	 * make sure that the list we return has original nodes, we map all the nodes
+	 * stored in @param fakeList with the original nodes from @param originalGraph,
+	 * and then return the list with original nodes.
+	 * 
+	 * 
+	 * @param fakeList
+	 *            A List<Node<E>> that contains nodes generated by the copied graph.
+	 * @param originalGraph
+	 *            The original graph whose List<Node<E>> we need.
+	 * @return A list of nodes from the original graph.
+	 */
+	protected List<Node<E>> returnOriginalNodes(List<Node<E>> fakeList, DirectedGraph<E> originalGraph) {
+		List<Node<E>> returnList = new ArrayList<Node<E>>();
+		for (Node<E> fakeNode : fakeList) {
+			returnList.add(originalGraph.getNodeFor(fakeNode.item()));
+		}
+		return returnList;
+	}
+
+	/**
+	 * Calculates the breadth first search from a given node as a parameter. As node
+	 * has all the information of all it's successors, the parameter DirectedGraph
+	 * is not needed. It uses an iterative algorithm to do it. Briefly described
+	 * below is how it works:
+	 * 
+	 * 		1. Adds the root (current) node to output.
+	 * 		2. Add all the current node's successors to a queue. Also add them to output.
+	 * 		3. Remove the first element of a queue and make it the current node.
+	 * 		4. Repeat from step 2.
+	 * 		5. Keep going until a node has no successors and the queue is empty.
+	 * 
+	 * @param root
+	 *            A node whose BFS is needed.
+	 * @return A list <Node<E>> with BFS of the node root.
+	 */
+	protected List<Node<E>> rootBFS(Node<E> root) {
+		List<Node<E>> returnList = new ArrayList<Node<E>>();
+		HashSet<Node<E>> returnSet = new HashSet<Node<E>>();
+		LinkedList<Node<E>> nodeQ = new LinkedList<Node<E>>();
+		returnList.add(root);
+		returnSet.add(root);
+		while (true) {
+			Iterator<Node<E>> headIterator = root.succsOf();
+			if (!headIterator.hasNext()) {
+				if (nodeQ.isEmpty())
+					break;
+				root = nodeQ.poll();
+				continue;
+			}
+			while (headIterator.hasNext()) {
+				Node<E> tempHead = headIterator.next();
+				if (returnSet.contains(tempHead)) {
+					continue;
+				}
+				nodeQ.add(tempHead);
+				returnList.add(tempHead);
+				returnSet.add(tempHead);
+			}
+			if (nodeQ.isEmpty())
+				break;
+			root = nodeQ.poll();
+		}
+		int attachCount = 0;
+		for (Node<E> attachNum : returnList) {
+			attachNum.num = attachCount++;
+		}
+		return returnList;
+	}
+
+	/**
+	 * Description of the three different sets used are given below. This method is
+	 * only used by isCyclic() method in MyDFS.java. Basically it performs a normal
+	 * DFS on the root node given as a parameter, but traverses only those nodes
+	 * which are currently in the WhiteSet and ignores the nodes which are in the
+	 * BlackSet. It also removes each node from the WhiteSet and puts it in the
+	 * GraySet while traversing. After this, an updated threeSet containing all the
+	 * three sets are sent back to the main function isCyclic() which in turn copies
+	 * the contents of GraySet, and puts it in the BlackSet, thus making the GraySet
+	 * empty. Now isCyclic() picks another root node and sends it again to this
+	 * method nodeDFS() and the process goes on until all the nodes have been
+	 * covered.
+	 * 
+	 * As we discussed, only nodes from WhiteSet are used and nodes from
+	 * BlackSet are ignored, but if the next node turns out to be from the GraySet,
+	 * it implies that the traversal has reached back to a node that was just
+	 * visited, and it confirms the presence of a cycle. If this happens, a null
+	 * value is returned, which, if detected by isCyclic(), it returns TRUE in it's
+	 * method.
+	 * 
+	 * @param root
+	 *            The root node from which the search will start.
+	 * @param threeSets
+	 *            A HashMap containing a total of three different sets. These sets
+	 *            are: WhiteSet: Containing the nodes that have never been
+	 *            traversed. GraySet: Containing the nodes that are currently being
+	 *            traversed. BlackSet: Containing the nodes which have already been
+	 *            traversed.
+	 * @return Returns an updated threeSets. Returns a null value if a cycle is
+	 *         detected.
+	 */
+	protected Map<Integer, Set<Node<E>>> nodeDFS(Node<E> root, Map<Integer, Set<Node<E>>> threeSets) {
+		boolean isCyclic = false;
+		Set<Node<E>> WhiteSet = threeSets.get(1);
+		Set<Node<E>> GraySet = threeSets.get(2);
+		Set<Node<E>> BlackSet = threeSets.get(3);
+		Stack<Node<E>> nodeStack = new Stack<Node<E>>();
+		if (!WhiteSet.contains(root))
+			return threeSets;
+		nodeStack.push(root);
+		WhiteSet.remove(root);
+		GraySet.add(root);
+		Node<E> rootNode = root, loopVar = null;
+		while (!nodeStack.isEmpty()) {
+			boolean flag = false;
+			Iterator<Node<E>> sucIterator = rootNode.succsOf();
+			if (!sucIterator.hasNext()) {
+				GraySet.remove(rootNode);
+				BlackSet.add(rootNode);
+			}
+			while (sucIterator.hasNext()) {
+				loopVar = sucIterator.next();
+				if (BlackSet.contains(loopVar)) {
+					Iterator<Node<E>> smallIterator = rootNode.succsOf();
+					boolean tempFlag = true;
+					while (smallIterator.hasNext()) {
+						if (!BlackSet.contains(smallIterator.next())) {
+							tempFlag = false;
+							break;
+						}
+					}
+					if (tempFlag == true) {
+						GraySet.remove(rootNode);
+						BlackSet.add(rootNode);
+					}
+					continue;
+				}
+				if (GraySet.contains(loopVar)) {
+					isCyclic = true; //Cycle Found
+					break;
+				} else {
+					nodeStack.push(loopVar);
+					WhiteSet.remove(loopVar);
+					GraySet.add(loopVar);
+					flag = true;
+					break;
+				}
+			}
+			if (isCyclic == true) {
+				return null;
+				//Since cycle is found, returning a null value
+			}
+			if (flag == true) {
+				rootNode = loopVar;
+			}
+			if (flag == false) {
+				nodeStack.pop();
+				if (nodeStack.isEmpty()) {
+					Iterator<Node<E>> grayIterator = GraySet.iterator();
+					while (grayIterator.hasNext()) {
+						BlackSet.add(grayIterator.next());
+					}
+					GraySet.clear();
+					continue;
+				}
+				rootNode = nodeStack.peek();
+			}
+		}
+		threeSets.put(1, WhiteSet);
+		threeSets.put(2, GraySet);
+		threeSets.put(3, BlackSet);
+		return threeSets;
+	}
+}

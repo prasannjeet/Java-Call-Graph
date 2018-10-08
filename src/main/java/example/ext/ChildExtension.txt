@@ -1,0 +1,5 @@
+public class ChildExtension extends Extension{ 
+	public void m(){
+		System.out.println("Printing ChildExtension string");
+	} 
+}
