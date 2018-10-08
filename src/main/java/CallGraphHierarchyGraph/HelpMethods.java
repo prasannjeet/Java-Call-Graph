@@ -1,4 +1,4 @@
-package root;
+package CallGraphHierarchyGraph;
 
 import spoon.reflect.declaration.*;
 import spoon.reflect.visitor.chain.CtQuery;

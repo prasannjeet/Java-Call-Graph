@@ -1,4 +1,4 @@
-package root;
+package CallGraphHierarchyGraph;
 
 import ps222vt.DirectedGraph;
 import ps222vt.MyGML;

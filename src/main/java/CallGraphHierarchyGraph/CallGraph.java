@@ -1,15 +1,12 @@
-package root;
+package CallGraphHierarchyGraph;
 
 import ps222vt.*;
 import spoon.Launcher;
 import spoon.SpoonAPI;
 import spoon.compiler.ModelBuildingException;
-import spoon.reflect.code.CtConstructorCall;
 import spoon.reflect.code.CtInvocation;
 import spoon.reflect.declaration.*;
 import spoon.reflect.visitor.filter.TypeFilter;
-import spoon.support.reflect.code.CtConstructorCallImpl;
-import spoon.support.reflect.declaration.CtClassImpl;
 import spoon.support.reflect.reference.CtExecutableReferenceImpl;
 
 import java.io.BufferedWriter;
