@@ -1,0 +1,28 @@
+Successfully increased the cluster size to: 2
+Following edges were removed in this removal: 
+From => fr.rhaz.os.Console TO=> fr.rhaz.os.Session
+From => fr.rhaz.os.logging.ConsoleLogger TO=> fr.rhaz.os.Session
+Total Edges Removed: 2
+
+
+Successfully increased the cluster size to: 3
+Following edges were removed in this removal: 
+From => fr.rhaz.os.logging.ConsoleLogger TO=> fr.rhaz.os.commands.users.User
+From => fr.rhaz.os.OS TO=> fr.rhaz.os.commands.users.User
+Total Edges Removed: 2
+
+
+Successfully increased the cluster size to: 4
+Following edges were removed in this removal: 
+From => fr.rhaz.os.logging.Logger TO=> fr.rhaz.os.commands.users.CommandSender
+From => fr.rhaz.os.commands.CommandManager TO=> fr.rhaz.os.commands.users.CommandSender
+Total Edges Removed: 2
+
+
+Successfully increased the cluster size to: 5
+Following edges were removed in this removal: 
+From => fr.rhaz.os.Console TO=> fr.rhaz.os.Utils
+From => fr.rhaz.os.Console TO=> fr.rhaz.os.commands.CommandManager
+Total Edges Removed: 2
+
+

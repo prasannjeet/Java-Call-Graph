@@ -117,7 +117,12 @@ public class MyNode<E> extends Node<E> implements Comparable<Node<E>> {
 		return tempList.iterator();
 	}
 
-	@Override
+    public Iterator<Node<E>> succsOfUnsorted() {
+        return M.get(S).values().iterator();
+    }
+
+
+    @Override
 	public Iterator<Node<E>> predsOf() {
 		Collection<Node<E>> C = M.get(P).values();
 		List<Node<E>> tempList = new ArrayList<Node<E>>();
@@ -132,6 +137,11 @@ public class MyNode<E> extends Node<E> implements Comparable<Node<E>> {
 		};
 		tempList.sort(tempComparator);
 		return tempList.iterator();
+	}
+
+	@Override
+	public Iterator<Node<E>> predsOfUnsorted() {
+		return M.get(P).values().iterator();
 	}
 
 	@Override

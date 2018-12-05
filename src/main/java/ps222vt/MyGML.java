@@ -115,7 +115,7 @@ public class MyGML<E> extends GML<E> {
 					+ ConvertColor.toHex(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256)) + "\" ]" + endl + tab
 					+ "]" + endl);
 		}
-		;
+
 		Map<Integer, ArrayList<Integer>> theMatrix = edgeMatrix(graph);
 		Set<Integer> intSet = theMatrix.keySet();
 		//Builds the third part
@@ -129,6 +129,69 @@ public class MyGML<E> extends GML<E> {
 		}
 		gmlSB.append("]");
 		return gmlSB.toString();
+	}
+
+	public String toGML (HashMap<String, HashMap<String,Integer>> edgeCount){
+		Random rand = new Random();
+		//Builds the first part
+		StringBuilder gmlSB = new StringBuilder("graph [" + endl + tab + "comment \"This is a simple graph\"" + endl
+				+ tab + "directed 1" + endl + tab + "id 11" + endl + tab + "label \"GML By Prasannjeet Singh\"" + endl);
+		int nodeCount = 0;
+		Iterator<Node<E>> nodeIterator = graph.iterator();
+		//Builds the second part
+		while (nodeIterator.hasNext()) {
+			String element = nodeIterator.next().toString();
+			gmlSB.append(tab + "node [" + endl + tab + tab + "id " + (nodeCount++) + endl + tab + tab + "label \""
+					+ element + "\"" + endl + tab + tab
+					+ "graphics [ w "+(element.length()*6+20)+".0 type \"roundrectangle\" fill \""
+					+ ConvertColor.toHex(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256)) + "\" ]" + endl + tab
+					+ "]" + endl);
+		}
+
+		Map<Integer, ArrayList<Integer>> theMatrix = edgeMatrix(graph);
+		Set<Integer> intSet = theMatrix.keySet();
+		//Builds the third part
+		edgeLabels(edgeCount, gmlSB, theMatrix, intSet);
+		gmlSB.append("]");
+		return gmlSB.toString();
+	}
+
+	public String toGMLUndirected (HashMap<String, HashMap<String,Integer>> edgeCount){
+		Random rand = new Random();
+		//Builds the first part
+		StringBuilder gmlSB = new StringBuilder("graph [" + endl + tab + "comment \"This is a simple graph\"" + endl
+				/*+ tab + "directed 0" + endl */+ tab + "id 11" + endl + tab + "label \"GML By Prasannjeet Singh\"" + endl);
+		int nodeCount = 0;
+		Iterator<Node<E>> nodeIterator = graph.iterator();
+		//Builds the second part
+		while (nodeIterator.hasNext()) {
+			String element = nodeIterator.next().toString();
+			gmlSB.append(tab + "node [" + endl + tab + tab + "id " + (nodeCount++) + endl + tab + tab + "label \""
+					+ element + "\"" + endl + tab + tab
+					+ "graphics [ w "+(element.length()*6+20)+".0 type \"roundrectangle\" fill \""
+					+ ConvertColor.toHex(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256)) + "\" ]" + endl + tab
+					+ "]" + endl);
+		}
+
+		Map<Integer, ArrayList<Integer>> theMatrix = edgeMatrix(graph);
+		Set<Integer> intSet = theMatrix.keySet();
+		//Builds the third part
+		edgeLabels(edgeCount, gmlSB, theMatrix, intSet);
+		gmlSB.append("]");
+		return gmlSB.toString();
+	}
+
+	private void edgeLabels(HashMap<String, HashMap<String, Integer>> edgeCount, StringBuilder gmlSB, Map<Integer, ArrayList<Integer>> theMatrix, Set<Integer> intSet) {
+		for (int x : intSet) {
+			ArrayList<Integer> tempList = theMatrix.get(x);
+			for (int y : tempList) {
+				int edgeLabel = edgeCount.get(convertIntToItem(x, graph)).get(convertIntToItem(y, graph));
+				gmlSB.append(tab + "edge [" + endl + tab + tab + "source " + x + endl + tab + tab + "target " + y + endl
+						+ tab + tab + "label \""+edgeLabel+"\"" + endl
+						+ tab + tab + "graphics [width 1 type \"line\" fill \"#0000FF\" arrow \"last\"]" + endl + tab
+						+ "]" + endl);
+			}
+		}
 	}
 
 	/**
@@ -154,7 +217,7 @@ public class MyGML<E> extends GML<E> {
 
 	/**
 	 * Since in the GML syntax, each node has to have an integer ID, like 1,2,3,
-	 * etc. We use integer as a mapping for each item.
+	 * etc. We use integer as a mapping for each item.	An inefficient way, currently too lazy to change it
 	 * 
 	 * @param e
 	 *            A generic item
@@ -170,6 +233,23 @@ public class MyGML<E> extends GML<E> {
 			veryTempMap.put(nodeIterator.next().item(), count++);
 		}
 		return (veryTempMap.get(e));
+	}
+
+	//An inefficient way, currently too lazy to change it
+	private E convertIntToItem(int a, DirectedGraph<E> dg) {
+		Iterator<Node<E>> nodeIterator = dg.iterator();
+		Map<E, Integer> veryTempMap = new HashMap<E, Integer>();
+		int count = 0;
+		while (nodeIterator.hasNext()) {
+			veryTempMap.put(nodeIterator.next().item(), count++);
+		}
+		Set<E> keyset = veryTempMap.keySet();
+		for (E theKey : keyset) {
+			if (veryTempMap.get(theKey) == a){
+				return theKey;
+			}
+		}
+		return null;
 	}
 
 	/**

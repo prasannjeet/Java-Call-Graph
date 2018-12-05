@@ -29,7 +29,7 @@ public class HelpClass<E> {
 	 * @param A directed graph.
 	 * @return A List<Node<E>> that contains all the nodes in the graph.
 	 */
-	protected List<Node<E>> nodesAsList(DirectedGraph<E> dg) {
+	public List<Node<E>> nodesAsList(DirectedGraph<E> dg) {
 		List<Node<E>> returnList = new ArrayList<Node<E>>();
 		Iterator<Node<E>> newIterator = dg.iterator();
 		while (newIterator.hasNext()) {
@@ -60,8 +60,8 @@ public class HelpClass<E> {
 	 * @param Node object
 	 * @return A List<Node<E>> that contains all the predecessor nodes of the given node.
 	 */
-	protected List<Node<E>> predAsList(Node<E> node) {
-		Iterator<Node<E>> predItr = node.predsOf();
+	public List<Node<E>> predAsList(Node<E> node) {
+		Iterator<Node<E>> predItr = node.predsOfUnsorted();
 		List<Node<E>> returnList = new ArrayList<Node<E>>();
 		while (predItr.hasNext()) {
 			returnList.add(predItr.next());
@@ -112,12 +112,12 @@ public class HelpClass<E> {
 	 * @param A Directed Graph
 	 * @return A Cloned directed graph.
 	 */
-	protected DirectedGraph<E> copyDG(DirectedGraph<E> dg) {
+	public DirectedGraph<E> copyDG(DirectedGraph<E> dg) {
 		DirectedGraph<E> returnItem = new MyGraph<E>();
 		Iterator<Node<E>> mainNodeIterator = dg.iterator();
 		while (mainNodeIterator.hasNext()) {
 			Node<E> tempNode = mainNodeIterator.next();
-			Iterator<Node<E>> successors = tempNode.succsOf();
+			Iterator<Node<E>> successors = tempNode.succsOfUnsorted();
 			if (!successors.hasNext())
 				returnItem.addNodeFor(tempNode.item());
 			while (successors.hasNext()) {

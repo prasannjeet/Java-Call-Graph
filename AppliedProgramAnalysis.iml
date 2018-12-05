@@ -33,6 +33,7 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.2" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.2" level="project" />
+    <orderEntry type="library" name="Maven: junit:junit:5.00" level="project" />
     <orderEntry type="library" name="Maven: org.junit.platform:junit-platform-console-standalone:1.3.1" level="project" />
     <orderEntry type="library" name="Maven: org.apiguardian:apiguardian-api:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.maven.shared:maven-shared-utils:3.2.1" level="project" />
@@ -41,5 +42,15 @@
     <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.maven.shared:maven-invoker:3.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-utils:3.0.24" level="project" />
+    <orderEntry type="library" name="Maven: com.github.javaparser:javaparser-symbol-solver-logic:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.mockito:mockito-core:unknown" level="project" />
+    <orderEntry type="library" name="Maven: com.github.javaparser:javaparser-symbol-solver-model:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.github.javaparser:javaparser-symbol-solver-core:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: jfree:jfreechart:1.0.13" level="project" />
+    <orderEntry type="library" name="Maven: jfree:jcommon:1.0.16" level="project" />
+    <orderEntry type="library" name="Maven: org.jgrapht:jgrapht-core:1.2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.jgrapht:jgrapht-io:1.2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.antlr:antlr4-runtime:4.7" level="project" />
+    <orderEntry type="library" name="Maven: com.googlecode.combinatoricslib:combinatoricslib:2.2" level="project" />
   </component>
 </module>

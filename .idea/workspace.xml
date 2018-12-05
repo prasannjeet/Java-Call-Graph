@@ -1,0 +1,1194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="AppliedProgramAnalysis:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="eea6f8e9-9ba6-4ed3-8ce1-66b392ff55a3" name="Default" comment="updated readme">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jcommon_1_0_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jfreechart_1_0_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/ClassUsageGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/SomeTest5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/classComplexity/PlotTheData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/classComplexity/WMC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/classComplexity/testingMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testWCM/LoopTesting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testWCM/TestOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testWCM/TestTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppliedProgramAnalysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AppliedProgramAnalysis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CallGraph.gml" beforeDir="false" afterPath="$PROJECT_DIR$/CallGraph.gml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassHierarchy.gml" beforeDir="false" afterPath="$PROJECT_DIR$/ClassHierarchy.gml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CallGraphHierarchyGraph/CallGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/CallGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CallGraphHierarchyGraph/ClassHierarchy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/ClassHierarchy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CallGraphHierarchyGraph/HelpMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/HelpMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example/Overload.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example/test/Test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/test/Test3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ps222vt/HelpClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ps222vt/HelpClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ps222vt/MyGML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ps222vt/MyGML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ps222vt/MyNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ps222vt/MyNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ps222vt/MyTransitiveClosure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ps222vt/MyTransitiveClosure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ps222vt/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ps222vt/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/example/Overload.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/example/test/Test3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/example/test/Test3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ps222vt/HelpClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ps222vt/HelpClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ps222vt/MyGML.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ps222vt/MyGML.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ps222vt/MyNode$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ps222vt/MyNode$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ps222vt/MyNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ps222vt/MyNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ps222vt/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ps222vt/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/root/CallGraph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/root/ClassHierarchy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/root/HelpMethods.class" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/callgraph$ClassHierarchy.ic" NAME="ClassHierarchy Coverage Results" MODIFIED="1538249883550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>root.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="241" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-678056088">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="12" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.7" value="3" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="17" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="9" />
+          <entry key="java" value="189" />
+          <entry key="md" value="1" />
+          <entry key="txt" value="2" />
+          <entry key="vmoptions" value="1" />
+          <entry key="xml" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="9" />
+          <entry key="JAVA" value="189" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="XML" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="4" />
+          <entry key="java" value="30233" />
+          <entry key="md" value="2981" />
+          <entry key="txt" value="14" />
+          <entry key="vmoptions" value="45" />
+          <entry key="xml" value="231" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="30230" />
+          <entry key="Markdown" value="2981" />
+          <entry key="PLAIN_TEXT" value="66" />
+          <entry key="XML" value="231" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/ClassUsageGraph.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2783">
+              <caret line="121" column="87" selection-start-line="121" selection-start-column="87" selection-end-line="121" selection-end-column="87" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/HelpMethods.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="298" column="55" selection-start-line="298" selection-start-column="49" selection-end-line="298" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>spoon</find>
+      <find>class</find>
+      <find>1</find>
+      <find>compare</find>
+      <find>process</find>
+      <find>PROCESS</find>
+      <find>element</find>
+      <find>edgematrix</find>
+      <find>getra</find>
+      <find>getRandom</find>
+      <find>sys</find>
+      <find>check_node</find>
+      <find>//Getting the main() method of the program. If more than one main methods are found, the first one will be used with a warning.</find>
+      <find>false ins</find>
+      <find>launch</find>
+      <find>filter</find>
+      <find>createDataSet</find>
+      <find>Iterator</find>
+      <find>toString</find>
+      <find>succsOf</find>
+      <find>filterChildre</find>
+      <find>nodesAs</find>
+      <find>toGMLU</find>
+      <find>refle</find>
+      <find>predAsL</find>
+      <find>DEBUG</find>
+      <find>DefaultWeightedEdge</find>
+      <find>constructCallGraph</find>
+      <find>makeThree</find>
+      <find>Total</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Integer</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\OneDrivePs222vt\OneDrive - student.lnu.se\Development\Eclipse\Workspace\AppliedProgramAnalysis\src\main\java\spoon</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="D:/Development/Eclipse/LunaWorkspace/hibernate-orm" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/spoon/reflect/CtModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/root/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ps222vt/MyGMLCallGraph.java" />
+        <option value="$PROJECT_DIR$/src/main/java/root/GetMethods.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ps222vt/test/GraphGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/root/ClassHeirarchy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/example/I.java" />
+        <option value="$PROJECT_DIR$/src/main/java/example/test/ITest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/example/test/Test1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/example/ext/Extension3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/example/test/ext/Extension1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/example/ext/Extension1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/example/test/Extension1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/example/test/I.java" />
+        <option value="$PROJECT_DIR$/src/main/java/example/test/Test2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/example/Program.java" />
+        <option value="$PROJECT_DIR$/src/main/java/root/HelpMethods.java" />
+        <option value="$PROJECT_DIR$/src/main/java/root/CallGraph.java" />
+        <option value="$PROJECT_DIR$/src/main/java/root/ClassHierarchy.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/CallGraphHierarchyGraph/CallGraph.java" />
+        <option value="$PROJECT_DIR$/src/main/java/example/Overload.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ps222vt/MyTransitiveClosure.java" />
+        <option value="$PROJECT_DIR$/src/main/java/example/test/Test3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/classComplexity/TestJfreeChart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/classComplexity/PlotTheData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/testWCM/Overload.java" />
+        <option value="$PROJECT_DIR$/src/main/java/classComplexity/SomeTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/testWCM/Program.java" />
+        <option value="$PROJECT_DIR$/src/main/java/classComplexity/CheckHash.java" />
+        <option value="$PROJECT_DIR$/src/main/java/testWCM/LoopTesting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/classComplexity/testingMethods.java" />
+        <option value="$PROJECT_DIR$/src/main/java/classComplexity/WMC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/SomeTests2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/testWCM/TestTwo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ps222vt/CtClassNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/SomeTest3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/SomeTests.java" />
+        <option value="$USER_HOME$/AppData/Local/JetBrains/Toolbox/apps/IDEA-U/ch-0/182.4892.20.vmoptions" />
+        <option value="$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/CallGraph.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ps222vt/Node.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ps222vt/MyNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ps222vt/HelpClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ps222vt/MyGML.java" />
+        <option value="$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/SomeTest5.java" />
+        <option value="$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/HelloJgraphT.java" />
+        <option value="$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/HelpMethods.java" />
+        <option value="$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/SomeTest4.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/ClassUsageGraph.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="call-graph" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1057" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Internationalization</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java 9Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>PerformanceJava</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="callgraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppliedProgramAnalysis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="callgraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppliedProgramAnalysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="callgraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppliedProgramAnalysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="callgraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppliedProgramAnalysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="callgraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppliedProgramAnalysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="callGraphHierarchyGraph" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="domina&#9;FILE&#9;file://D:/OneDrivePs222vt/OneDrive - student.lnu.se/Development/Eclipse/Workspace/AppliedProgramAnalysis/src/main/java/grail/simplegraph/algorithms/MyDominance.java" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Java Projects/JavaChess" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OneDrivePs222vt\OneDrive - student.lnu.se\Development\Eclipse\Workspace\AppliedProgramAnalysis\src\main\java\testWCM" />
+      <recent name="D:\OneDrivePs222vt\OneDrive - student.lnu.se\Development\Eclipse\Workspace\AppliedProgramAnalysis\src\main\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="testWCM" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OneDrivePs222vt\OneDrive - student.lnu.se\Development\Eclipse\Workspace\AppliedProgramAnalysis\src\main\java" />
+      <recent name="D:\OneDrivePs222vt\OneDrive - student.lnu.se\Development\Eclipse\Workspace\AppliedProgramAnalysis\src\main\java\classComplexity" />
+      <recent name="D:\OneDrivePs222vt\OneDrive - student.lnu.se\Development\Eclipse\Workspace\AppliedProgramAnalysis\src\main\java\callGraphHierarchyGraph" />
+      <recent name="D:\OneDrivePs222vt\OneDrive - student.lnu.se\Development\Eclipse\Workspace\AppliedProgramAnalysis\src\main\java\testWCM" />
+      <recent name="D:\OneDrivePs222vt\OneDrive - student.lnu.se\Development\Eclipse\Workspace\AppliedProgramAnalysis\src\main" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.ClassUsageGraph">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CallGraph" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="callGraphHierarchyGraph.CallGraph" />
+      <module name="AppliedProgramAnalysis" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;D:\\OneDrivePs222vt\\OneDrive - student.lnu.se\\Development\\Eclipse\\LunaWorkspace\\RHazOS-master\\src\\main\\java\\fr&quot;" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="callGraphHierarchyGraph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClassHierarchy" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="callGraphHierarchyGraph.ClassHierarchy" />
+      <module name="AppliedProgramAnalysis" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;D:\\OneDrivePs222vt\\OneDrive - student.lnu.se\\Development\\Eclipse\\Workspace\\AppliedProgramAnalysis\\src\\main\\java\\testWCM&quot;" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClassUsageGraph" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="callGraphHierarchyGraph.ClassUsageGraph" />
+      <module name="AppliedProgramAnalysis" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;D:\\OneDrivePs222vt\\OneDrive - student.lnu.se\\Development\\Eclipse\\LunaWorkspace\\RHazOS-master\\src&quot;" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GraphMLDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="callGraphHierarchyGraph.GraphMLDemo" />
+      <module name="AppliedProgramAnalysis" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="callGraphHierarchyGraph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyDominance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="grail.simplegraph.algorithms.MyDominance" />
+      <module name="AppliedProgramAnalysis" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="grail.simplegraph.algorithms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SomeTest4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="callGraphHierarchyGraph.SomeTest4" />
+      <module name="AppliedProgramAnalysis" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="callGraphHierarchyGraph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SomeTest5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="callGraphHierarchyGraph.SomeTest5" />
+      <module name="AppliedProgramAnalysis" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="callGraphHierarchyGraph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SomeTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="callGraphHierarchyGraph.SomeTests" />
+      <module name="AppliedProgramAnalysis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="callGraphHierarchyGraph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.CallGraph" />
+      <item itemvalue="Application.ClassHierarchy" />
+      <item itemvalue="Application.ClassUsageGraph" />
+      <item itemvalue="Application.SomeTests" />
+      <item itemvalue="Application.MyDominance" />
+      <item itemvalue="Application.SomeTest5" />
+      <item itemvalue="Application.SomeTest4" />
+      <item itemvalue="Application.GraphMLDemo" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SomeTest4" />
+        <item itemvalue="Application.GraphMLDemo" />
+        <item itemvalue="Application.SomeTest5" />
+        <item itemvalue="Application.MyDominance" />
+        <item itemvalue="Application.SomeTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eea6f8e9-9ba6-4ed3-8ce1-66b392ff55a3" name="Default" comment="" />
+      <created>1537655929702</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537655929702</updated>
+      <workItem from="1537655935705" duration="1159000" />
+      <workItem from="1537658674291" duration="743000" />
+      <workItem from="1537659883930" duration="196000" />
+      <workItem from="1537660163791" duration="171000" />
+      <workItem from="1537661104345" duration="4512000" />
+      <workItem from="1537712571740" duration="7178000" />
+      <workItem from="1537721430376" duration="27535000" />
+      <workItem from="1537969308454" duration="9439000" />
+      <workItem from="1538074154217" duration="39120000" />
+      <workItem from="1538309666065" duration="681000" />
+      <workItem from="1538311273898" duration="19699000" />
+      <workItem from="1538398656938" duration="663000" />
+      <workItem from="1539008728523" duration="3316000" />
+      <workItem from="1539022802862" duration="32628000" />
+      <workItem from="1539196212505" duration="17030000" />
+      <workItem from="1539822058807" duration="744000" />
+      <workItem from="1540751336497" duration="58000" />
+      <workItem from="1541263003940" duration="19264000" />
+      <workItem from="1541290952301" duration="49338000" />
+    </task>
+    <task id="LOCAL-00001" summary="updated readme">
+      <created>1539011905348</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539011905348</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="SpoonArchitectureEnforcerTest - 2018.09.23 at 18h 25m 21s.xml">
+      <configuration name="SpoonArchitectureEnforcerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpoonArchitectureEnforcerTest - 2018.09.23 at 19h 40m 12s.xml">
+      <configuration name="SpoonArchitectureEnforcerTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="233474000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3774617" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49840087" weight="0.2431843" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4946695" weight="0.25845146" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991276" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3293348" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4968017" weight="0.27262813" />
+      <window_info anchor="bottom" id="Tool Output" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5053305" side_tool="true" weight="0.4242094" />
+      <window_info anchor="bottom" id="Log4jMonitor" order="10" sideWeight="0.49946696" weight="0.3293348" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49626866" weight="0.19302072" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="12" sideWeight="0.49946696" weight="0.3293348" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49413645" weight="0.28026173" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32995737" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Google Cloud Storage" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.13646056" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Capture Analysis" order="10" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3774617" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49840087" weight="0.2431843" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4946695" weight="0.261723" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991276" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3293348" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4968017" weight="0.27262813" />
+      <window_info anchor="bottom" id="Tool Output" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5053305" side_tool="true" weight="0.4242094" />
+      <window_info anchor="bottom" id="Log4jMonitor" order="10" sideWeight="0.49946696" weight="0.3293348" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49626866" weight="0.19302072" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="12" sideWeight="0.49946696" weight="0.3293348" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49413645" weight="0.28026173" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32995737" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Google Cloud Storage" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.13646056" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Capture Analysis" order="10" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated readme" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ps222vt/test/TestDirectedGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ps222vt/benchmark/BenchmarkMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="12" column="65" lean-forward="true" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ps222vt/MyBFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="54" column="60" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="239" column="6" selection-start-line="239" selection-start-column="6" selection-end-line="239" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ps222vt/MyDFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="805">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/example/Overload.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ps222vt/ConvertColor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/example/test/Test3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/swing/JFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="231" column="11" selection-start-line="231" selection-start-column="11" selection-end-line="231" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/jfree/jfreechart/1.0.13/jfreechart-1.0.13.jar!/org/jfree/chart/ChartUtilities.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/classComplexity/SomeTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/testWCM/Program.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/classComplexity/CheckHash.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/classComplexity/WMC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1494">
+          <caret line="89" column="41" lean-forward="true" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/classComplexity/PlotTheData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-185">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/classComplexity/testingMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/testWCM/LoopTesting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/testWCM/TestOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/ClassHierarchy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-563">
+          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/testWCM/TestTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+          <folding>
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ps222vt/CtClassNode.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/SomeTest3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3427">
+          <caret line="176" selection-start-line="176" selection-end-line="176" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/JetBrains/Toolbox/apps/IDEA-U/ch-0/182.4892.20.vmoptions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/grail/simplegraph/ReadMe.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/SomeTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="38" column="80" selection-start-line="38" selection-start-column="80" selection-end-line="38" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/SomeTests2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/grail/simplegraph/PerformantNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/CallGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="86" column="46" lean-forward="true" selection-start-line="83" selection-start-column="12" selection-end-line="88" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ps222vt/ConnectedComponents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ps222vt/GML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="42" />
+          <folding>
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ps222vt/DirectedGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="96" column="27" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ps222vt/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="114" column="53" selection-start-line="114" selection-start-column="53" selection-end-line="114" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#4686#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ps222vt/HelpClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ps222vt/MyConnectedComponents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ps222vt/MyTransitiveClosure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ps222vt/MyGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2949">
+          <caret line="100" column="52" selection-start-line="100" selection-start-column="52" selection-end-line="100" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ps222vt/MyNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2323">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+          <folding>
+            <element signature="e#3990#3991#0" expanded="true" />
+            <element signature="e#4056#4057#0" expanded="true" />
+            <element signature="e#4177#4178#0" expanded="true" />
+            <element signature="e#4228#4229#0" expanded="true" />
+            <element signature="e#4792#4793#0" expanded="true" />
+            <element signature="e#4816#4817#0" expanded="true" />
+            <element signature="e#4850#4851#0" expanded="true" />
+            <element signature="e#4888#4889#0" expanded="true" />
+            <element signature="e#4940#4941#0" expanded="true" />
+            <element signature="e#4978#4979#0" expanded="true" />
+            <element signature="e#5033#5034#0" expanded="true" />
+            <element signature="e#5068#5069#0" expanded="true" />
+            <element signature="e#5123#5124#0" expanded="true" />
+            <element signature="e#5158#5159#0" expanded="true" />
+            <element signature="e#5449#5450#0" expanded="true" />
+            <element signature="e#5507#5508#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/SomeTest5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-131">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/HelloJgraphT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="192" column="24" lean-forward="true" selection-start-line="180" selection-start-column="3" selection-end-line="202" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#6089#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#4706#4707#0" expanded="true" />
+            <element signature="e#4792#4793#0" expanded="true" />
+            <element signature="e#5008#5009#0" expanded="true" />
+            <element signature="e#5077#5078#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jgrapht/jgrapht-jdk1.5/0.7.3/jgrapht-jdk1.5-0.7.3.jar!/org/jgrapht/ext/GraphMLExporter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/jre/lib/rt.jar!/com/sun/xml/internal/bind/v2/schemagen/xmlschema/AttributeType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/grail/simplegraph/algorithms/MyConnectedComponents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="26" column="40" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/GraphMLDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="325" column="47" lean-forward="true" selection-start-line="325" selection-start-column="47" selection-end-line="325" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#10717#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1719#1720#0" expanded="true" />
+            <element signature="e#1761#1762#0" expanded="true" />
+            <element signature="e#1805#1806#0" expanded="true" />
+            <element signature="e#1841#1842#0" expanded="true" />
+            <element signature="e#2037#2038#0" expanded="true" />
+            <element signature="e#2075#2076#0" expanded="true" />
+            <element signature="e#2265#2266#0" expanded="true" />
+            <element signature="e#2328#2329#0" expanded="true" />
+            <element signature="e#2848#2849#0" expanded="true" />
+            <element signature="e#2884#2885#0" expanded="true" />
+            <element signature="e#2937#2938#0" expanded="true" />
+            <element signature="e#2979#2980#0" expanded="true" />
+            <element signature="e#3020#3021#0" expanded="true" />
+            <element signature="e#3053#3054#0" expanded="true" />
+            <element signature="e#3101#3102#0" expanded="true" />
+            <element signature="e#3137#3138#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/grail/simplegraph/algorithms/MyDominance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1403">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ps222vt/MyGML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="75" column="31" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/SomeTest4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="38" selection-end-column="102" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1171#1188#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/grailtest/TestUndirectedSetBasedGraph1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/HelpMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="298" column="55" selection-start-line="298" selection-start-column="49" selection-end-line="298" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/callGraphHierarchyGraph/ClassUsageGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2783">
+          <caret line="121" column="87" selection-start-line="121" selection-start-column="87" selection-end-line="121" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>AppliedProgramAnalysis:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>antlr-4.7-intellij-1.8.4-version-complete</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Android API 25 Platform</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>AppliedProgramAnalysis</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>9.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

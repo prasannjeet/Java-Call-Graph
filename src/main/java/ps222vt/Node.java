@@ -81,6 +81,12 @@ public abstract class Node<E> {
 	 */
 	public abstract Iterator<Node<E>> succsOf();
 
+    /**
+     * Returns an iterator over all successor nodes without sorting or comparing.
+     * @return successor node iterator
+     */
+	public abstract Iterator<Node<E>> succsOfUnsorted();
+
 	/**
 	 * Returns <tt>true</tt> if <tt>this</tt> node has <tt>node</tt> as predecessor, 
 	 * otherwise <tt>false</tt>.
@@ -101,6 +107,12 @@ public abstract class Node<E> {
 	 * @return predecessor node iterator
 	 */
 	public abstract Iterator<Node<E>> predsOf();
+
+	/**
+	 * Returns an iterator over all predecessor nodes.
+	 * @return predecessor node iterator
+	 */
+	public abstract Iterator<Node<E>> predsOfUnsorted();
 	
 	/**
 	 * Returns true if <tt>this</tt> node has a reflexive edge 

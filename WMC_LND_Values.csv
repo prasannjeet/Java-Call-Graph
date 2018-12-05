@@ -1,0 +1,5 @@
+FullQualifiedName,Name,WMC,RFC
+testWCM.LoopTesting,LoopTesting,7,3
+testWCM.TestTwo,TestTwo,0,6
+testWCM.TestTwo$TestThree,TestThree,0,0
+testWCM.TestOne,TestOne,0,4
